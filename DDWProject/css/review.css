@@ -1,0 +1,78 @@
+.review-title {
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.reviews {
+    display: flex;
+    gap: 20px;
+}
+.review-form {
+    width: 50%;
+    padding: 10px;
+}
+.review-form form {
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+}
+.review-form form label {
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+.review-form form input, .review-form form select, .review-form form textarea {
+    width: 70%;
+    outline: none;
+    border: 0;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: #D0E7D2;
+    color: #618264;
+}
+.review-form form button {
+    width: fit-content;
+    border: 0;
+    background-color: #D0E7D2;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: #618264;
+}
+.existing-reviews {
+    width: 50%;
+}
+#review-list {
+    padding-top: 20px;
+    list-style: number;
+}
+.review-sample {
+    background-color: #D0E7D2;
+    display: flex;
+    justify-content: space-between;
+    color: #618264;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.review-sample h3 {
+    color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .review-form {
+        width: 100%;
+        padding: 10px;
+    }
+    .review-form form input, .review-form form select, .review-form form textarea {
+        width: 250px;
+    }
+    .existing-reviews {
+        width: 100%;
+    }
+}
