@@ -1,49 +1,48 @@
 /* Add your CSS styles here */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
 }
 
 .close-modal {
-    float: right;
-    font-size: 25px;
-    cursor: pointer;
+  float: right;
+  font-size: 25px;
+  cursor: pointer;
 }
 .modal-content img {
-    width: 200px;
-    height: 200px;
-    border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
 }
-.modal-content button {
-    margin-top: 15px;
+.modal-content button, #openModal {
+  margin-top: 15px;
   border: 0;
   background: #618264;
   padding: 10px 20px;
@@ -51,45 +50,154 @@ body {
   font-size: 15px;
 }
 .modal-content button a {
- text-decoration: none;
- color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 .modal-content button:hover {
-    box-shadow: 2px 2px 5px #000;
-  }
-  
+  box-shadow: 2px 2px 5px #000;
+}
+
 .header-image {
-    height: 300px;
-    width: 100%;
-    background-image: url(https://images.unsplash.com/photo-1587547131116-a0655a526190?auto=format&fit=crop&q=80&w=1832&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 80%;
+  height: 300px;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1587547131116-a0655a526190?auto=format&fit=crop&q=80&w=1832&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80%;
 }
 .header-image .header-text {
-    color: #fff;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.slider-title {
+    text-align: center;
+    margin: 10px 0;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.card-slider {
+  height: 350px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.slide-track {
+  display: flex;
+  gap: 15px;
+  width: calc(250px * 10);
+  animation: scroll 20s linear infinite;
+}
+.slide-track:hover {
+    animation-play-state: paused;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 5));
+    }
+}
+.product {
+  height: 300px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background: #d0e7d2;
+  border-radius: 5px;
+}
+.product:hover picture img {
+    scale: 1.2;
+}
+picture {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+picture img {
+  width: 100%;
+  border-radius: 5px;
+}
+.detail,
+.button {
+  width: 90%;
+  margin: auto;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  font-size: 15px;
+  color: #444;
+}
+small {
+  color: #555;
+  font-size: small;
+}
+.product a {
+  text-decoration: none;
+  padding: 6px 14px;
+  font-size: 15px;
+  margin: 5px 0 0 20px;
+  display: inline-block;
+  background: #618264;
+  color: white;
+}
+.discount-img-container {
     display: flex;
-    flex-direction: column;
     gap: 15px;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    flex-wrap: wrap;
 }
-.card-slide {
-    background: #000;
+.discount-img-container img {
+    width: 30%;
 }
-.card-container {
+.yt {
+    background: #d0e7d2;
     display: flex;
-    overflow: hidden;
-    width: 100%;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
 }
-
-/* Style the individual cards */
-.card {
-    width: 600px;
-    height: 200px;
-    margin: 0 10px;
-    background-color: #f0f0f0;
-    transition: transform 1s;
+.yt img {
+    width: 25%;
 }
+.yt .yt-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.yt .yt-text button a {
+    text-decoration: none;
+    color: #000;
+}
+.yt .yt-text button {
+    margin-top: 15px;
+    border: 0;
+    background: #618264;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  .yt .yt-text button:hover {
+    box-shadow: 2px 2px 5px #000;
+  }
