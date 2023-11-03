@@ -15,7 +15,10 @@ function displayItemsInBasket() {
     // Iterate through the items and display them
     basketItems.forEach(function (item) {
         const li = document.createElement("li");
+        const img = document.createElement("img");
+        img.src = item.photo;
         li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+        li.appendChild(img);
         basketList.appendChild(li);
 
         // Update the total price

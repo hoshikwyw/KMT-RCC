@@ -8,9 +8,9 @@ function displayCampingEquipment() {
     const campingEquipmentList = document.getElementById("camping-equipment-list");
     // Sample data for camping equipment (you can replace this with your data)
     const campingEquipment = [
-        { name: "Tent", photo: "tent.jpg", price: 99.99 },
-        { name: "Sleeping Bag", photo: "sleeping-bag.jpg", price: 49.99 },
-        { name: "Backpack", photo: "backpack.jpg", price: 39.99 },
+        { name: "BackPack", photo: "https://campe-theme.myshopify.com/cdn/shop/products/Product7.jpg?v=1598945868", price: 99.99 },
+        { name: "Hiking Boot", photo: "https://campe-theme.myshopify.com/cdn/shop/products/Product1_2000x.jpg?v=1598945754", price: 49.99 },
+        { name: "LED Torch Light", photo: "https://campe-theme.myshopify.com/cdn/shop/products/Product24_2000x.jpg?v=1598946040", price: 39.99 },
     ];
 
     campingEquipment.forEach(function (item) {

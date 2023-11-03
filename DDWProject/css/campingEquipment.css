@@ -1,0 +1,51 @@
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+#camping-equipment-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 15px 0;
+}
+#camping-equipment-list li {
+  background-color: #d0e7d2;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#camping-equipment-list li img {
+  width: 200px;
+  border-radius: 5px;
+}
+#camping-equipment-list li:hover img {
+  transform: skewX(20deg);
+}
+
+#camping-equipment-list li button {
+  border: 0;
+  font-size: 15px;
+  background: #79ac78;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+#camping-equipment-list li button:hover {
+  color: #fff;
+  box-shadow: 2px 2px 5px #000;
+}
+@media screen and (max-width: 768px) {
+  #camping-equipment-list li {
+    width: 250px;
+  }
+}
