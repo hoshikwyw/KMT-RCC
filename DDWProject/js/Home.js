@@ -12,3 +12,10 @@ window.addEventListener('click', function(event) {
         document.getElementById('modal').style.display = 'none';
     }
 });
+
+function redirectPage(selectedValue) {
+    if (selectedValue) {
+        window.location.href = selectedValue;
+    }
+}
+

@@ -36,3 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
     reviewForm.reset();
   });
 });
+function redirectPage(selectedValue) {
+  if (selectedValue) {
+      window.location.href = selectedValue;
+  }
+}

@@ -39,3 +39,8 @@ function addToBasket(item) {
     // Store the updated basket in local storage
     localStorage.setItem("basketItems", JSON.stringify(basketItems));
 }
+function redirectPage(selectedValue) {
+    if (selectedValue) {
+        window.location.href = selectedValue;
+    }
+}

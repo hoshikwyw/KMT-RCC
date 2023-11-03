@@ -46,3 +46,8 @@ function placeOrder() {
     // Clear the basket
     clearBasket();
 }
+function redirectPage(selectedValue) {
+    if (selectedValue) {
+        window.location.href = selectedValue;
+    }
+}

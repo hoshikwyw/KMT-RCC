@@ -15,13 +15,21 @@
           <div class="logo">
             <h3>RCC</h3>
           </div>
-          <div>
+          <div class="nav-links">
             <li><a href="Home.html">Home</a></li>
             <li><a href="CampingEquipment.html">Camping Equipment</a></li>
             <li><a href="Furniture.html">Furniture</a></li>
             <li><a href="Reviews.html">Reviews</a></li>
             <li><a href="Offers.html">Offers and Packages</a></li>
           </div>
+          <select id="select" onchange="redirectPage(this.value)">
+            <option value="">Home</option>
+            <option value="Home.html"><a href="Home.html">Home</a></option>
+            <option value="CampingEquipment.html"><a href="CampingEquipment.html">Camping Equipment</a></option>
+            <option value="Furniture.html"><a href="Furniture.html">Furniture</a></option>
+              <option value="Offers.html"><a href="Offers.html">Offers and Packages</a></option>
+              <option value="Reviews.html"><a href="Reviews.html">Reviews</a></option>
+          </select>
           <div>
             <li>
               <a href="Basket.html">
@@ -37,6 +45,7 @@
             </li>
           </div>
         </ul>
+        
       </nav>
     </header>
     <h1 class="offer-title">Special Offers</h1>
